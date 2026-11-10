@@ -18,14 +18,13 @@ const DATA_URL = "https://raw.githubusercontent.com/hirogturtle-cell/muse-usage/
 // GitHub repo (photos/photo-00.b64.jpg ... photo-62.b64.jpg). Despite the
 // ".b64" in their names they are plain JPEG files. One is picked per day.
 const PHOTO_BASE = "https://raw.githubusercontent.com/hirogturtle-cell/muse-usage/main/photos/";
-const PHOTO_COUNT = 63;
 
 function pad2(n) { return String(n).padStart(2, "0"); }
 
 function photoIndexForToday() {
   const now = new Date();
   const dayKey = now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
-  return dayKey % PHOTO_COUNT;
+  return dayKey % 63;
 }
 
 async function fetchPhoto() {
