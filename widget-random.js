@@ -23,8 +23,9 @@ function pad2(n) { return String(n).padStart(2, "0"); }
 
 function photoIndexForToday() {
   const now = new Date();
-  const dayKey = now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
-  return dayKey % 63;
+  // Change every hour: date + hour as the rotation key.
+  const key = now.getFullYear() * 1000000 + (now.getMonth() + 1) * 10000 + now.getDate() * 100 + now.getHours();
+  return key % 63;
 }
 
 async function fetchPhoto() {
@@ -141,6 +142,7 @@ async function buildWidget(d) {
     const t = bar.addText(`Muse  ${d.remainingPercent}% left \u00b7 Weekly ${d.usedPercent}% used \u00b7 ${d.plan || ""}`);
     t.font = Font.boldSystemFont(13);
     t.textColor = Color.white();
+    w.refreshAfterDate = new Date(Date.now() + 60 * 60 * 1000);
     return w;
   }
 
@@ -158,16 +160,18 @@ async function buildWidget(d) {
     const col = row.addStack();
     col.layoutVertically();
     buildStats(col, d);
+    w.refreshAfterDate = new Date(Date.now() + 60 * 60 * 1000);
     return w;
   }
 
   buildStats(w, d);
 
-  // Ask iOS to refresh roughly every 15 minutes (iOS decides the real cadence).
-  w.refreshAfterDate = new Date(Date.now() + 15 * 60 * 1000);
+  w.refreshAfterDate = new Date(Date.now() + 60 * 60 * 1000);
   return w;
 }
 
+// Request the next refresh in ~1 hour (iOS decides the real cadence).
+// Note: ListWidget.refreshAfterDate is set inside buildWidget via global below.
 const data = await fetchUsage();
 const widget = await buildWidget(data);
 if (config.runsInWidget) {
