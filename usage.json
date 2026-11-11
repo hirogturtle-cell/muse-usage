@@ -1,1 +1,8 @@
-{"plan":"Power","usedPercent":38,"remainingPercent":62,"resetText":"Nov 12 at 7:24 PM JST","resetAt":"2026-11-12T19:24:00+09:00","updatedAt":"2026-11-11T00:13:36+09:00"}
+{
+  "plan": "Power",
+  "usedPercent": 45,
+  "remainingPercent": 55,
+  "resetText": "Nov 12 at 7:24 PM JST",
+  "resetAt": "2026-11-12T19:24:00+09:00",
+  "updatedAt": "2026-11-11T18:45:39.012+09:00"
+}

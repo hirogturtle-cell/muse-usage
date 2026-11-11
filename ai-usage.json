@@ -1,0 +1,36 @@
+{
+  "updatedAt": "2026-11-11T18:45:39.012+09:00",
+  "plan": "Power",
+  "usedPercent": 45,
+  "remainingPercent": 55,
+  "resetAt": "2026-11-12T19:24:00+09:00",
+  "resetText": "Nov 12 at 7:24 PM JST",
+  "services": [
+    {
+      "name": "Muse",
+      "plan": "Power",
+      "usedPercent": 45,
+      "remainingPercent": 55,
+      "resetAt": "2026-11-12T19:24:00+09:00",
+      "resetText": "Nov 12 at 7:24 PM JST"
+    },
+    {
+      "name": "Grok",
+      "plan": "Premium",
+      "usedPercent": null,
+      "remainingPercent": null,
+      "resetAt": "",
+      "resetText": "",
+      "note": "manual: re-checked Sun 9:00"
+    },
+    {
+      "name": "Claude",
+      "plan": "work",
+      "usedPercent": null,
+      "remainingPercent": null,
+      "resetAt": "",
+      "resetText": "",
+      "note": "manual"
+    }
+  ]
+}
