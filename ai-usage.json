@@ -13,24 +13,6 @@
       "remainingPercent": 55,
       "resetAt": "2026-11-12T19:24:00+09:00",
       "resetText": "Nov 12 at 7:24 PM JST"
-    },
-    {
-      "name": "Grok",
-      "plan": "Premium",
-      "usedPercent": null,
-      "remainingPercent": null,
-      "resetAt": "",
-      "resetText": "",
-      "note": "manual: re-checked Sun 9:00"
-    },
-    {
-      "name": "Claude",
-      "plan": "personal",
-      "usedPercent": null,
-      "remainingPercent": null,
-      "resetAt": "",
-      "resetText": "",
-      "note": "manual"
     }
   ]
 }
