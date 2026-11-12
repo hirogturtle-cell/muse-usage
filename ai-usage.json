@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-12T15:46:09+09:00",
+  "updatedAt": "2026-11-12T18:46:06+09:00",
   "plan": "Power",
-  "usedPercent": 53,
-  "remainingPercent": 47,
+  "usedPercent": 55,
+  "remainingPercent": 45,
   "resetAt": "2026-11-12T19:24:00+09:00",
   "resetText": "Nov 12 at 7:24 PM JST",
   "services": [
     {
       "name": "Muse",
       "plan": "Power",
-      "usedPercent": 53,
-      "remainingPercent": 47,
+      "usedPercent": 55,
+      "remainingPercent": 45,
       "resetAt": "2026-11-12T19:24:00+09:00",
       "resetText": "Nov 12 at 7:24 PM JST"
     }
