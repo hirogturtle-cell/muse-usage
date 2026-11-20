@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-11-19T06:25:50+09:00",
+  "updatedAt": "2026-11-21T06:25:13+09:00",
   "plan": "Power",
-  "usedPercent": 45,
-  "remainingPercent": 55,
-  "resetAt": "2026-11-19T19:24:00+09:00",
-  "resetText": "Nov 19 at 7:24 PM JST",
+  "usedPercent": 7,
+  "remainingPercent": 93,
+  "resetAt": "2026-11-26T19:24:00+09:00",
+  "resetText": "Nov 26 at 7:24 PM JST",
   "services": [
     {
       "name": "Muse",
       "plan": "Power",
-      "usedPercent": 45,
-      "remainingPercent": 55,
-      "resetAt": "2026-11-19T19:24:00+09:00",
-      "resetText": "Nov 19 at 7:24 PM JST"
+      "usedPercent": 7,
+      "remainingPercent": 93,
+      "resetAt": "2026-11-26T19:24:00+09:00",
+      "resetText": "Nov 26 at 7:24 PM JST"
     }
   ]
 }
